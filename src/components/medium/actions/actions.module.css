@@ -1,0 +1,67 @@
+.container {
+  position: absolute;
+  inset: 0px;
+  background-color: #1a1a1aab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.container:hover {
+  opacity: 1;
+}
+
+.languages {
+  position: absolute;
+  height: 32px;
+  background-color: #fff;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.languagesIcon {
+  width: 32px;
+  background-color: #a400fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.languagesInfo {
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.delete {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.edit button {
+  background: none;
+  border: 1px solid #fefefe;
+  border-radius: 4px;
+  color: #fefefe;
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.edit button:hover {
+  background-color: #fefefe;
+  color: #222;
+}

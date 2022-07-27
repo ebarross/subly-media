@@ -1,0 +1,28 @@
+.container {
+  position: absolute;
+  inset: 0px;
+  background-color: #d9d9d9e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.title {
+  color: #555;
+}
+
+.progress {
+  width: 100%;
+  height: 5px;
+  border-radius: 16px;
+  background-color: #9f18e8;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 5px,
+    #a400fc 5px,
+    #a400fc 10px
+  );
+}

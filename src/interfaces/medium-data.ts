@@ -3,7 +3,7 @@ export interface MediumData {
   name: string;
   cover: string;
   languages: Array<string>;
-  status: string;
+  status: 'ready' | 'transcribing' | 'error';
   createdAt: string;
   updatedAt: string;
   errorMessage?: string;

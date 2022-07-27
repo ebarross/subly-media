@@ -2,6 +2,7 @@ import React from 'react';
 import { MediumData } from '../../interfaces/medium-data';
 import styles from './medium.module.css';
 import Alert from './alert/alert';
+import Backdrop from './backdrop/backdrop';
 
 type Props = {
   data: MediumData;
@@ -24,7 +25,14 @@ function Medium({ data }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.cover}>
-        {status === 'error' ? <Alert /> : <img src={cover} alt="Cover" />}
+        {status === 'error' ? (
+          <Alert />
+        ) : (
+          <>
+            {status === 'transcribing' && <Backdrop />}
+            <img src={cover} alt="Cover" />
+          </>
+        )}
       </div>
       <div className={styles.details}>
         <p className={styles.title}>{name}</p>

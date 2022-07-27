@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MediumData } from '../../interfaces/medium-data';
+import { Medium } from '../../components';
 import styles from './medium-list.module.css';
 
 function MediumList() {
@@ -23,7 +24,9 @@ function MediumList() {
   const renderList = () => (
     <ul className={styles.list}>
       {list.map((medium) => (
-        <li key={medium.id}>{medium.name}</li>
+        <li key={medium.id}>
+          <Medium data={medium} />
+        </li>
       ))}
     </ul>
   );

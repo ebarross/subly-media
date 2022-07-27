@@ -1,0 +1,22 @@
+.button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.primary {
+  composes: button;
+  background-color: #a400fc;
+  color: #fefefe;
+  border-color: #a400fc;
+}
+
+.secondary {
+  composes: button;
+  background-color: #fff;
+  color: #5e5e5e;
+  border-color: #d5d5d5;
+}

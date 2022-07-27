@@ -1,4 +1,5 @@
+import Button from './button/button';
 import MediumList from './medium-list/medium-list';
 import Medium from './medium/medium';
 
-export { MediumList, Medium };
+export { Button, MediumList, Medium };

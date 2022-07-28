@@ -13,7 +13,7 @@ function MediumList({ list }: Props) {
       {list && list.length > 0 ? (
         <ul className={styles.list}>
           {list.map((medium) => (
-            <li key={medium.id}>
+            <li data-testid="item" key={medium.id}>
               <Medium data={medium} />
             </li>
           ))}

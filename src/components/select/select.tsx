@@ -24,7 +24,7 @@ function Select({ label, options, onSelect }: Props) {
   return (
     <div className={styles.select}>
       <label htmlFor={label}>{label}:</label>
-      <select id={label} onChange={handleChange}>
+      <select id={label} name={label} onChange={handleChange}>
         <option value="">Select...</option>
         {options.map(({ value, description }) => (
           <option data-testid="option" key={value} value={value}>

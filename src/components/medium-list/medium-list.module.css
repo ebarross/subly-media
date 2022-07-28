@@ -9,3 +9,8 @@
 .list li {
   list-style: none;
 }
+
+.message {
+  font-size: 24px;
+  text-align: center;
+}

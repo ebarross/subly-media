@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { MediumData } from '../../interfaces/medium-data';
 import { Medium } from '../../components';
+import fetchMedia from '../../services/media';
 import styles from './medium-list.module.css';
 
 function MediumList() {
@@ -9,16 +10,11 @@ function MediumList() {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    async function fetchData() {
-      setLoading(true);
-      fetch('https://run.mocky.io/v3/a811c0e9-adae-4554-9694-173aa23bc38b')
-        .then((response) => response.json())
-        .then((data) => setList(data.media))
-        .catch(() => setHasError(true))
-        .finally(() => setLoading(false));
-    }
-
-    fetchData();
+    setLoading(true);
+    fetchMedia()
+      .then((media) => setList(media))
+      .catch(() => setHasError(true))
+      .finally(() => setLoading(false));
   }, []);
 
   const renderList = () => (

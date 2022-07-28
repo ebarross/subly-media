@@ -27,7 +27,7 @@ function Select({ label, options, onSelect }: Props) {
       <select id={label} onChange={handleChange}>
         <option value="">Select...</option>
         {options.map(({ value, description }) => (
-          <option key={value} value={value}>
+          <option data-testid="option" key={value} value={value}>
             {description}
           </option>
         ))}

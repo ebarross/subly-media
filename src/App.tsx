@@ -1,11 +1,10 @@
 import React from 'react';
-import { MediumList } from './components';
+import Home from './pages/home/home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Subly</h1>
-      <MediumList />
+      <Home />
     </div>
   );
 }

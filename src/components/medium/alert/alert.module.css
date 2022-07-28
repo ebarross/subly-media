@@ -5,10 +5,21 @@
   padding: 32px 24px;
 }
 
+.messageContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  margin-top: 4px;
+}
+
 .message {
   font-size: 15px;
   line-height: 1.4;
   color: #6e6b6b;
+  margin-bottom: 16px;
 }
 
 .actions {
